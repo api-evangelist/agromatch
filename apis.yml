@@ -1,7 +1,29 @@
 aid: agromatch
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/agromatch.png
 name: AgroMatch
-description: AgroMatch is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  AgroMatch is a Chilean agricultural technology (AgTech) platform, founded in 2018 and backed by 500
+  Global, that connects farmers, agricultural contractors, and machinery owners in a single collaborative
+  marketplace. Often described as the "Airbnb of agricultural machinery," it lets machinery owners lease
+  idle equipment (tractors, implements, portable bins) during low-use periods to farmers in regions whose
+  seasons do not coincide, and lets farmers contract or offer agricultural services such as harvesting,
+  soil preparation, and crop applications. The platform also supports buying and selling new and used
+  machinery, operative leasing, and supplier networking, using artificial intelligence and IoT to match
+  demand for machinery with available supply. AgroMatch reports more than 400 B2B customers across Chile
+  and Perú with operations extending to the US, Colombia, and Mexico. The company operates as a web and
+  mobile application at app.agromatch.cl; no public developer API, OpenAPI specification, or developer
+  portal is published as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/agromatch/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +36,13 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- AgTech
+- Agriculture
+- Marketplace
+- Machinery Rental
+- Agricultural Services
+- IoT
+- Chile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,16 @@ maintainers:
 common:
 - type: Website
   url: https://agromatch.cl
+- type: Blog
+  url: https://agromatch.cl/noticias
+- type: SignUp
+  url: https://app.agromatch.cl/
+- type: Support
+  url: mailto:contacto@agromatch.cl
+- type: DomainSecurity
+  url: security/agromatch-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
